@@ -13,7 +13,7 @@ public class TestCases {
 
     @Before
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "/Users/gkaraca/Downloads/chromedriver/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "chromedriver/chromedriver.exe");
         driver = new ChromeDriver();
         driver.get(URL);
         System.out.println("Opened Hepsiburada web page successfully.");
