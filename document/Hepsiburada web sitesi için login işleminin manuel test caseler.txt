@@ -1,0 +1,132 @@
+Hepsiburada web sitesi için login işleminin manuel functional test caseleri çıkarınız. 
+
+1- Chrome browser ı kullanarak www.hepsiburada.com sitesine giriş yapılır.
+
+2- Öncesinde üyelik yapıldıysa ve user bilgileri biliniyorsa;
+	2.1 - Anasayfada "Giriş Yap" alanına imlec getirilir.
+	2.2 - Çıkan ekrandan "Giriş Yap" kısmına tıklanır.
+	2.3 - Gelen sayfada "E-posta adresi" alanına siteye üye olunurken kullanılan e-posta adresi girilir.
+	2.4 - Aynı sayfada "Şifre" alanına e-posta adresi ile eşleştirilmiş olan şifre girilir.
+	2.5 - Şifre girilen alanın yanındaki göz işaretine tıklanarak şifrenin gösterildiği kontrol edilmelidir.
+	2.6 - Yeniden göz işaretine tıklanarak şifrenin gizlendiği kontrolü yapılmalıdır.
+	2.7 - "Giriş yap" butonuna tıklanır.
+
+3- Öncesinde üyelik yapıldıysa ancak password yanlış ise (unutulduysa);
+	3.1 - Anasayfada "Giriş Yap" alanına imlec getirilir.
+	3.2 - Çıkan ekrandan "Giriş Yap" kısmına tıklanır.
+	3.3 - Gelen sayfada "E-posta adresi" alanına siteye kayıtlı olan e-posta adresi girilir.
+	3.4 - Aynı sayfada "Şifre" alanına yanlış şifre girilir.
+	3.5 - "Giriş yap" butonuna tıklanır.
+	3.6 - Şifre yanlış olduğundan dolayı hata ekranı çıkmalıdır. 
+	3.7 - Ekranda uyarı metninin doğru içerik ile ve görüntü ile geldiği kontrol edilir. 
+		  Metin içeriği şu şekilde olmalıdır. "Bilgileriniz eksik veya hatalı. Girdiğiniz bilgiler ile herhangi bir hesabı eşleştiremedik, kontrol edip tekrar deneyin."  
+	3.8 - "Şifremi unuttum" butonuna tıklanarak şifre yenileme işleminin yapılacağı ekrana gidilir. Butona basıldıktan sonra "Şifre yenileme" ekranına 	yönlendirildiği kontrol edilir. 
+	3.9 - Şifre yenileme ekranındaki bilgilendirme metninin içeriği kontrol edilir. İçerik şu şekilde olmalıdır. "Şifre yenileme bağlantısını gönderebilmemiz 		için e-posta adresinize ihtiyacımız var."
+	3.10 - "E-posta adresi" kısmına siteye üye olurken kullanılan e-posta adresi yazılır.
+	3.11 - "Devam et" butonuna tıklanır. 
+	3.12 - Eğer girilen e-posta adresi gmail.com uzantılıysa "Gmail uygulamasını aç" butonu ile gmail hesabının açılacağı ekrana yönlendirildiği 
+		  kontrol edilir.
+	3.13 - Siteye üye olurken kullanılan e-posta adresine login olunur ve gelen kutusu veya spam kutusu kontrol edilir.
+	3.14 - Hepsiburada'dan gelen "Şifre yenileme talebi" başlıklı mail açılır. Mailin subjecti ve içeriğindeki metin kontrol edilmelidir. 
+	3.15 - "Yeni Şifre Oluştur" butonuna tıklanır.
+	3.16 - Yönlendirilen sayfada şifrenin içeriğinde 1 rakam, 1 büyük harf ve 8 karakter girildiği kontrolleri ile birlikte yeni şifre belirlenir.	
+	3.17 - Göz işaretine tıklayarak belirlenen şifrenin gösterildiği kontrol edilmelidir.
+	3.18 - "Kaydet" butonuna tıklanır.
+	3.19 - Başarılı bir şekilde web sitesine giriş yapıldığı "Hesabım" kısmından gözlemlenir. Kullanıcı isim - soyisim bilgileri kontrol edilir.
+
+4- LOGIN OLMA YOK!! Öncesinde üyelik yapıldıysa, password yanlış ise ve e-posta adresi ile şifre yenilenemiyorsa. ("Yardıma ihtiyacım var" kısmı ile ilerleme)
+	4.1 - Anasayfada "Giriş Yap" alanına imlec getirilir.
+	4.2 - Çıkan ekrandan "Giriş Yap" kısmına tıklanır.
+	4.3 - Gelen sayfada "E-posta adresi" alanına siteye kayıtlı olan e-posta adresi girilir.
+	4.4 - Aynı sayfada "Şifre" alanına yanlış şifre girilir. "Giriş yap" butonuna tıklanır.
+	4.5 - Ekranda uyarı metninin doğru içerik ile ve görüntü ile geldiği kontrol edilir. 
+		  Metin içeriği şu şekilde olmalıdır. "Bilgileriniz eksik veya hatalı. Girdiğiniz bilgiler ile herhangi bir hesabı eşleştiremedik, kontrol edip tekrar deneyin." 
+	4.6 - "Şifremi unuttum" butonuna tıklanarak şifre yenileme işleminin yapılacağı ekrana gidilir. Butona basıldıktan sonra "Şifre yenileme" ekranına 	yönlendirildiği kontrol edilir. 
+	4.7 - Şifre yenileme ekranındaki bilgilendirme metninin içeriği kontrol edilir. İçerik şu şekilde olmalıdır. "Şifre yenileme bağlantısını gönderebilmemiz 		için e-posta adresinize ihtiyacımız var."
+	4.8 - "Yardıma ihtiyacım var" kısmına tıklanır. Yeni sayfaya yönlendirildiği kontrol edilir.
+	4.9 - Whatsapp destek linkine tıkla. Eğer PC de whatsapp uygulaması var ise açılmalıdır.
+	4.10 - Çözüm merkezi telefon numarası bilgisini içeren linke tıkla. Yazılan telefon bilgisi eğer Android telefondan da chrome'da oturum açık ise cihaza gönderilir. 
+	4.11 - "Anasayfaya git" linkine tıkla. Anasayfaya yönlendirildiğini kontrol et.
+
+5- Öncesinde üyelik yapıldıysa ve password yanlış (unutulduysa) ise Tekrar gönder butonu ile yeniden şifre yenileme linki gönderme;
+	5.1 - Anasayfada "Giriş Yap" alanına imlec getirilir.
+	5.2 - Çıkan ekrandan "Giriş Yap" kısmına tıklanır.
+	5.3 - Yönlendirilen sayfada "E-posta adresi" alanına siteye kayıtlı olan e-posta adresi girilir.
+	5.4 - Yönlendirilen sayfada "Şifre" alanına yanlış şifre girilir.
+	5.5 - "Giriş yap" butonuna tıklanır.
+	5.6 - Ekranda uyarı metninin doğru içerik ile ve görüntü ile geldiği kontrol edilir. 
+		  Metin içeriği şu şekilde olmalıdır. "Bilgileriniz eksik veya hatalı. Girdiğiniz bilgiler ile herhangi bir hesabı eşleştiremedik, kontrol edip tekrar deneyin."  
+	5.7 - "Şifremi unuttum" butonuna tıklanarak şifre yenileme işleminin yapılacağı ekrana gidilir. Butona basıldıktan sonra "Şifre yenileme" ekranına 	yönlendirildiği kontrol edilir. 
+	5.8 - Şifre yenileme ekranındaki bilgilendirme metninin içeriği kontrol edilir. İçerik şu şekilde olmalıdır. "Şifre yenileme bağlantısını gönderebilmemiz 		için e-posta adresinize ihtiyacımız var."
+	5.9 - "E-posta adresi" kısmına siteye üye olurken kullanılan e-posta adresi yazılır.
+	5.10 - "Devam et" butonuna tıklanır. 
+	5.11 - Şifre yenileme bağlantısı girilen e-posta adresine gönderildikten sonra 5 dakikalık zamanın azaldığını kontrol et.
+	5.12 - Tekrar göndermek için kullanılacak olan buton 5 dakikalık zamanın sonunda aktif olmalıdır.
+	5.13 - "Tekrar gönder" butonu aktif olduğunda tıkla. Şifre yenileme bağlantısının üye olunan hesaba gönderildiğini ekrandaki bilgilendirme yazısından doğrula. 
+	5.14 - Siteye üye olurken kullanılan e-posta adresine login olunur ve gelen kutusu veya spam kutusu kontrol edilir.
+	5.15 - Hepsiburada'dan gelen "Şifre yenileme talebi" başlıklı mail açılır. Mailin subjecti ve içeriğindeki metin kontrol edilmelidir. 
+	5.16 - "Yeni Şifre Oluştur" butonuna tıklanır.
+	5.17 - Yönlendirilen sayfada şifrenin içeriğinde 1 rakam, 1 büyük harf ve 8 karakter girildiği kontrolleri ile birlikte yeni şifre belirlenir.	
+	5.18 - Göz işaretine tıklayarak belirlenen şifrenin gösterildiği kontrol edilmelidir.
+	5.19 - "Kaydet" butonuna tıklanır.
+	5.20 - Başarılı bir şekilde web sitesine giriş yapıldığı "Hesabım" kısmından gözlemlenir. Kullanıcı isim - soyisim bilgileri kontrol edilir.
+
+
+6- BUG !! Öncesinde üyelik yapıldıysa ve password yanlış ise "Farklı bir doğrulama yöntemi dene" linki ile şifre yenileme ve login olma;
+	6.1 - Anasayfada "Giriş Yap" alanına imlec getirilir.
+	6.2 - Çıkan ekrandan "Giriş Yap" kısmına tıklanır.
+	6.3 - Yönlendirilen sayfada "E-posta adresi" alanına siteye kayıtlı olan e-posta adresi girilir.
+	6.4 - Yönlendirilen sayfada "Şifre" alanına yanlış şifre girilir.
+	6.5 - "Giriş yap" butonuna tıklanır.
+	6.6 - Giriş bilgileri yanlış olduğundan dolayı ekranda uyarı metninin doğru içerik ile ve görüntü ile geldiği kontrol edilir. 
+		  Metin içeriği şu şekilde olmalıdır. "Bilgileriniz eksik veya hatalı. Girdiğiniz bilgiler ile herhangi bir hesabı eşleştiremedik, kontrol edip tekrar deneyin."  
+	6.7 - "Şifremi unuttum" butonuna tıklanarak şifre yenileme işleminin yapılacağı ekrana gidilir. 
+	6.8 - Butona basıldıktan sonra "Şifre yenileme" ekranına 	yönlendirildiği kontrol edilir. 
+	6.9 - Şifre yenileme ekranındaki bilgilendirme metninin içeriği kontrol edilir. İçerik şu şekilde olmalıdır. "Şifre yenileme bağlantısını gönderebilmemiz 		için e-posta adresinize ihtiyacımız var."
+	6.9 - "E-posta adresi" kısmına siteye üye olurken kullanılan e-posta adresi yazılır. "Devam et" butonuna tıklanır.
+	6.10 - Gelen ekranda son bir adım kaldığına dair bilgilendirme yapılmaktadır. Bu metnin aşağıdaki şekilde olması kontrol edilmelidir.
+		 	Son bir adım kaldı...
+            Şifre yenileme bağlantısı [e-posta adresi] adresine başarıyla gönderildi.
+	6.11 - "Farklı bir doğrulama yöntemi dene" linkine tıklanır. 
+	6.12 - Farklı bir doğrulama yöntemi linkine tıklanmasına rağmenyine aynı yöntemin olduğu "Şifre yenileme" ekranı geliyor. Burada beklenen farklı bir ekranın gelmesi. HATALI!!!
+
+7- Öncesinde üyelik yapıldıysa ve password yanlış ise Tekrar gönder butonuna 5 dakika içerisinde bir daha basma kontrolü;
+	7.1 - Anasayfada "Giriş Yap" alanına imlec getirilir.
+	7.2 - Çıkan ekrandan "Giriş Yap" kısmına tıklanır.
+	7.3 - Yönlendirilen sayfada "E-posta adresi" alanına siteye kayıtlı olan e-posta adresi girilir.
+	7.4 - Yönlendirilen sayfada "Şifre" alanına yanlış şifre girilir.
+	7.5 - "Giriş yap" butonuna tıklanır.
+	7.6 - Ekranda uyarı metninin doğru içerik ile ve görüntü ile geldiği kontrol edilir. 
+		  Metin içeriği şu şekilde olmalıdır. "Bilgileriniz eksik veya hatalı. Girdiğiniz bilgiler ile herhangi bir hesabı eşleştiremedik, kontrol edip tekrar deneyin."  
+	7.7 - "Şifremi unuttum" butonuna tıklanarak şifre yenileme işleminin yapılacağı ekrana gidilir. Butona basıldıktan sonra "Şifre yenileme" ekranına 	yönlendirildiği kontrol edilir. 
+	7.8 - Şifre yenileme ekranındaki bilgilendirme metninin içeriği kontrol edilir. İçerik şu şekilde olmalıdır. "Şifre yenileme bağlantısını gönderebilmemiz 		için e-posta adresinize ihtiyacımız var."
+	7.9 - "E-posta adresi" kısmına siteye üye olurken kullanılan e-posta adresi yazılır.
+	7.10 - "Devam et" butonuna tıklanır. 
+	7.11 - Şifre yenileme ekranındaki Devam et butonuna 5 dakika içerisinde bir daha basılmalıdır.
+	7.12 - Butona basıldıktan sonra ekranda daha önce talep edilen bağlantının geçerli olduğu bilgisi verilmektedir. Uyarı metni kontrol edilmelidir.
+	7.13 - Tekrar göndermek için kullanılacak olan buton 5 dakikalık zamanın sonunda aktif olmalıdır.
+	7.14 - "Tekrar gönder" butonu aktif olduğunda tıkla. Şifre yenileme bağlantısının üye olunan hesaba gönderildiğini ekrandaki bilgilendirme yazısından doğrula. 
+	7.15 - Siteye üye olurken kullanılan e-posta adresine login olunur ve gelen kutusu veya spam kutusu kontrol edilir.
+	7.16 - Hepsiburada'dan gelen "Şifre yenileme talebi" başlıklı mail açılır. Mailin subjecti ve içeriğindeki metin kontrol edilmelidir. 
+	7.17 - "Yeni Şifre Oluştur" butonuna tıklanır.
+	7.18 - Yönlendirilen sayfada şifrenin içeriğinde 1 rakam, 1 büyük harf ve 8 karakter girildiği kontrolleri ile birlikte yeni şifre belirlenir.	
+	7.19 - Göz işaretine tıklayarak belirlenen şifrenin gösterildiği kontrol edilmelidir.
+	7.20 - "Kaydet" butonuna tıklanır.
+	7.21 - Başarılı bir şekilde web sitesine giriş yapıldığı "Hesabım" kısmından gözlemlenir. Kullanıcı isim - soyisim bilgileri kontrol edilir.
+
+
+8- Öncesinde üyelik yapıldıysa ve e-posta adresi yanlış ise;
+	8.1 - Anasayfada "Giriş Yap" alanına imlec getirilir.
+	8.2 - Çıkan ekrandan "Giriş Yap" kısmına tıklanır.
+	8.3 - Yönlendirilen sayfada "E-posta adresi" alanına yanlış e-posta adresi girilir.
+	8.4 - Çıkan ekranda "Bilgileriniz eksik veya hatalı. Girdiğiniz bilgiler ile herhangi bir hesabı eşleştiremedik, kontrol edip tekrar deneyin." metninin çıktığı kontrol edilir. 
+
+
+9- Üye olduktan sonra login işleminin yapılması.
+	9.1 - Anasayfada "Giriş Yap" alanına imlec getirilir.
+	9.2 - Çıkan ekranda "Üye ol" kısmına tıklanır.
+	9.3 - Üye olmak için bilgilerin girildiği ekrana yönlendirildiği kontrol edilmelidir.
+	9.4 - E-posta adresi ile üye ol kısmından Ad, Soyad, E-posta adresi, Şifre alanları doldurulur.
+	9.5 - Rıza metni onaylanır.
+	9.6 - Üye ol butonu aktif olduğunda tıklanır.
+	9.7 - Ana sayfaya yönlendirildiğinde "Hesabım" alanından girilen bilgiler ile login olunduğu kontrol edilmelidir.
